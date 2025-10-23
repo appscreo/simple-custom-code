@@ -1,0 +1,91 @@
+/* Overlay Styles */
+#scc-ai-overlay,
+#scc-ai-result {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scc-ai-modal {}
+
+.scc-ai-field-container {
+    width: 600px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    padding: 20px;
+}
+
+.scc-ai-modal h2 {
+    margin-top: 0;
+}
+
+.scc-ai-field {
+    margin-bottom: 15px;
+}
+
+.scc-ai-field:last-of-type {
+    margin-bottom: 0;
+}
+
+.scc-ai-field textarea {
+    width: 100%;
+    min-height: 150px;
+    resize: vertical;
+}
+
+#scc-ai-generated-code {
+    min-height: 250px;
+}
+
+.scc-ai-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.scc-loading-spinner {
+    margin-left: 10px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ccc;
+    border-top-color: #007cba;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+.scc-ai-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#scc-ai-generate-button, .scc-button {
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+#scc-ai-generate-button svg, .scc-button svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    margin-right: 5px;
+}

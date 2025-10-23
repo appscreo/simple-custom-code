@@ -1,0 +1,62 @@
+.scc-ai-description {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;    
+}
+
+.scc-ai-description p {
+    margin-top: 0;
+}
+
+.scc-ai-description ol {
+    margin-bottom: 0;
+}
+
+.simple-custom-code_page_scc-settings .form-table {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.simple-custom-code_page_scc-settings .form-table th {
+    padding: 20px 20px 20px 15px;
+}
+
+.simple-custom-code_page_scc-settings h2:not(:first-of-type) {
+    margin-top: 2em;
+}
+
+.scc-pro-only .scc-pro-content {
+    opacity: 0.5;
+}
+
+.scc-pro-only {
+    position: relative;
+}
+
+.scc-pro-only .scc-pro-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scc-pro-only .scc-pro-message a {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    max-width: 80%;
+    display: flex;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.scc-pro-only .scc-pro-message a:hover {
+    background-color: #e34c26;
+}

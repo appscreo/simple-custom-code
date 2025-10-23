@@ -1,0 +1,880 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Custom Code - CSS, JS, and HTML\n"
+"POT-Creation-Date: 2025-10-18 10:20+0300\n"
+"PO-Revision-Date: 2025-10-18 10:20+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Simple Custom Code\n"
+
+#: includes/class-scc-admin-columns.php:65
+msgid "Type"
+msgstr "Tipo"
+
+#: includes/class-scc-admin-columns.php:66
+#: includes/class-scc-meta-boxes.php:246
+msgid "Status"
+msgstr "Estado"
+
+#: includes/class-scc-admin-columns.php:67
+msgid "Title"
+msgstr "Título"
+
+#: includes/class-scc-admin-columns.php:68
+msgid "Details"
+msgstr "Detalles"
+
+#: includes/class-scc-admin-columns.php:69 includes/class-scc-settings.php:488
+msgid "Author"
+msgstr "Autor"
+
+#: includes/class-scc-admin-columns.php:70
+msgid "Date"
+msgstr "Fecha"
+
+#: includes/class-scc-admin-columns.php:71
+msgid "Modified"
+msgstr "Modificado"
+
+#: includes/class-scc-admin-columns.php:99
+#: includes/class-scc-admin-columns.php:404
+msgid "Click to deactivate"
+msgstr "Haz clic para desactivar"
+
+#: includes/class-scc-admin-columns.php:100
+#: includes/class-scc-admin-columns.php:308
+#: includes/class-scc-admin-columns.php:405
+#: includes/class-scc-meta-boxes.php:249
+msgid "Active"
+msgstr "Activo"
+
+#: includes/class-scc-admin-columns.php:103
+#: includes/class-scc-admin-columns.php:408
+msgid "Click to activate"
+msgstr "Haz clic para activar"
+
+#: includes/class-scc-admin-columns.php:104
+#: includes/class-scc-admin-columns.php:309
+#: includes/class-scc-admin-columns.php:409
+#: includes/class-scc-meta-boxes.php:250
+msgid "Inactive"
+msgstr "Inactivo"
+
+#: includes/class-scc-admin-columns.php:161
+msgid "Loading locations"
+msgstr "Cargando ubicaciones"
+
+#: includes/class-scc-admin-columns.php:182
+#: includes/class-scc-meta-boxes.php:331
+msgid "Priority"
+msgstr "Prioridad"
+
+#: includes/class-scc-admin-columns.php:191
+msgid "Minification enabled"
+msgstr "Minificación habilitada"
+
+#: includes/class-scc-admin-columns.php:199
+#: includes/class-scc-meta-boxes.php:375
+msgid "CSS Preprocessor"
+msgstr "Preprocesador CSS"
+
+#: includes/class-scc-admin-columns.php:206
+msgid "External file"
+msgstr "Archivo externo"
+
+#: includes/class-scc-admin-columns.php:211
+msgid "Options"
+msgstr "Opciones"
+
+#: includes/class-scc-admin-columns.php:227
+#: includes/class-scc-admin-columns.php:243
+msgid "ago"
+msgstr "hace"
+
+#: includes/class-scc-admin-columns.php:297
+msgid "All Types"
+msgstr "Todos los tipos"
+
+#: includes/class-scc-admin-columns.php:307
+msgid "All Status"
+msgstr "Todos los estados"
+
+#: includes/class-scc-admin-columns.php:366 includes/class-scc-settings.php:740
+msgid "Invalid nonce"
+msgstr "Nonce inválido"
+
+#: includes/class-scc-admin-columns.php:370
+msgid "You do not have permission to edit this post."
+msgstr "No tienes permiso para editar esta entrada."
+
+#: includes/class-scc-admin-columns.php:442
+msgid "Are you sure you want to change the status of this code?"
+msgstr "¿Estás seguro de que quieres cambiar el estado de este código?"
+
+#: includes/class-scc-admin-columns.php:443 includes/class-scc-settings.php:788
+msgid "An error occurred. Please try again."
+msgstr "Ocurrió un error. Por favor, inténtalo de nuevo."
+
+#: includes/class-scc-chatgpt-code-generator.php:352
+msgid "Missing API key"
+msgstr "Falta la clave API"
+
+#: includes/class-scc-meta-boxes.php:58
+msgid "Code Content"
+msgstr "Contenido del código"
+
+#: includes/class-scc-meta-boxes.php:67
+msgid "Code Settings"
+msgstr "Configuración del código"
+
+#: includes/class-scc-meta-boxes.php:76
+msgid "Loading Conditions"
+msgstr "Condiciones de carga"
+
+#: includes/class-scc-meta-boxes.php:89
+msgid "Permission denied."
+msgstr "Permiso denegado."
+
+#: includes/class-scc-meta-boxes.php:111
+msgid "Type not allowed"
+msgstr "Tipo no permitido"
+
+#: includes/class-scc-meta-boxes.php:115
+msgid "AI engine is missing"
+msgstr "Falta el motor de IA"
+
+#: includes/class-scc-meta-boxes.php:164 simple-custom-code.php:273
+msgid "CSS"
+msgstr "CSS"
+
+#: includes/class-scc-meta-boxes.php:177 simple-custom-code.php:274
+msgid "JavaScript"
+msgstr "JavaScript"
+
+#: includes/class-scc-meta-boxes.php:188 simple-custom-code.php:275
+msgid "HTML"
+msgstr "HTML"
+
+#: includes/class-scc-meta-boxes.php:256
+msgid "Code Type"
+msgstr "Tipo de código"
+
+#: includes/class-scc-meta-boxes.php:267
+msgid "Linking Type"
+msgstr "Tipo de enlace"
+
+#: includes/class-scc-meta-boxes.php:280
+msgid "Loading Method"
+msgstr "Método de carga"
+
+#: includes/class-scc-meta-boxes.php:291 includes/class-scc-meta-boxes.php:386
+#: includes/class-scc-meta-boxes.php:465 includes/class-scc-settings.php:544
+#: includes/class-scc-settings.php:588
+msgid "Available in Pro"
+msgstr "Disponible en Pro"
+
+#: includes/class-scc-meta-boxes.php:296
+msgid "Code Position"
+msgstr "Posición del código"
+
+#: includes/class-scc-meta-boxes.php:307
+msgid "Manual Type"
+msgstr "Tipo manual"
+
+#: includes/class-scc-meta-boxes.php:319
+msgid "Loading Locations"
+msgstr "Ubicaciones de carga"
+
+#: includes/class-scc-meta-boxes.php:345
+msgid "Minify Code"
+msgstr "Minificar código"
+
+#: includes/class-scc-meta-boxes.php:349
+msgid "Enable code minification"
+msgstr "Habilitar minificación de código"
+
+#: includes/class-scc-meta-boxes.php:355 includes/class-scc-meta-boxes.php:365
+msgid "Optimized Loading"
+msgstr "Carga optimizada"
+
+#: includes/class-scc-meta-boxes.php:412 simple-custom-code.php:304
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: includes/class-scc-meta-boxes.php:420
+msgid "Hook Name"
+msgstr "Nombre del gancho"
+
+#: includes/class-scc-meta-boxes.php:427
+msgid "Set conditions to control where this code will be loaded on your website."
+msgstr "Establece condiciones para controlar dónde se cargará este código en tu sitio web."
+
+#: includes/class-scc-meta-boxes.php:438 includes/class-scc-meta-boxes.php:451
+msgid "URL or pattern"
+msgstr "URL o patrón"
+
+#: includes/class-scc-meta-boxes.php:439 includes/class-scc-meta-boxes.php:640
+msgid "Remove"
+msgstr "Eliminar"
+
+#: includes/class-scc-meta-boxes.php:452
+msgid "Add Condition"
+msgstr "Añadir condición"
+
+#: includes/class-scc-meta-boxes.php:456
+msgid "Examples:"
+msgstr "Ejemplos:"
+
+#: includes/class-scc-meta-boxes.php:457
+msgid "• Contains: \"shop\" - loads on pages containing \"shop\" in URL"
+msgstr "• Contiene: \"shop\" - se carga en páginas que contienen \"shop\" en la URL"
+
+#: includes/class-scc-meta-boxes.php:458
+msgid "• Equals: \"/about\" - loads only on the about page"
+msgstr "• Igual a: \"/about\" - se carga solo en la página about"
+
+#: includes/class-scc-meta-boxes.php:459
+msgid "• Starts with: \"/product/\" - loads on all product pages"
+msgstr "• Comienza con: \"/product/\" - se carga en todas las páginas de productos"
+
+#: includes/class-scc-meta-boxes.php:509
+msgid "File Location:"
+msgstr "Ubicación del archivo:"
+
+#: includes/class-scc-meta-boxes.php:511
+msgid "Edit"
+msgstr "Editar"
+
+#: includes/class-scc-meta-boxes.php:515
+msgid "Save"
+msgstr "Guardar"
+
+#: includes/class-scc-meta-boxes.php:516
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: includes/class-scc-meta-boxes.php:641
+msgid "Are you sure you want to remove this condition?"
+msgstr "¿Estás seguro de que quieres eliminar esta condición?"
+
+#: includes/class-scc-post-type.php:50
+msgctxt "Post type general name"
+msgid "Custom Codes"
+msgstr "Códigos personalizados"
+
+#: includes/class-scc-post-type.php:51
+msgctxt "Post type singular name"
+msgid "Custom Code"
+msgstr "Código personalizado"
+
+#: includes/class-scc-post-type.php:52
+msgctxt "Admin Menu text"
+msgid "Custom Codes"
+msgstr "Códigos personalizados"
+
+#: includes/class-scc-post-type.php:53
+msgctxt "Add New on Toolbar"
+msgid "Custom Code"
+msgstr "Código personalizado"
+
+#: includes/class-scc-post-type.php:54
+msgid "Add New"
+msgstr "Añadir nuevo"
+
+#: includes/class-scc-post-type.php:55
+msgid "Add New Custom Code"
+msgstr "Añadir nuevo código personalizado"
+
+#: includes/class-scc-post-type.php:56
+msgid "New Custom Code"
+msgstr "Nuevo código personalizado"
+
+#: includes/class-scc-post-type.php:57
+msgid "Edit Custom Code"
+msgstr "Editar código personalizado"
+
+#: includes/class-scc-post-type.php:58
+msgid "View Custom Code"
+msgstr "Ver código personalizado"
+
+#: includes/class-scc-post-type.php:59
+msgid "All Custom Codes"
+msgstr "Todos los códigos personalizados"
+
+#: includes/class-scc-post-type.php:60
+msgid "Search Custom Codes"
+msgstr "Buscar códigos personalizados"
+
+#: includes/class-scc-post-type.php:61
+msgid "Parent Custom Codes:"
+msgstr "Códigos personalizados padre:"
+
+#: includes/class-scc-post-type.php:62
+msgid "No custom codes found."
+msgstr "No se encontraron códigos personalizados."
+
+#: includes/class-scc-post-type.php:63
+msgid "No custom codes found in Trash."
+msgstr "No se encontraron códigos personalizados en la papelera."
+
+#: includes/class-scc-post-type.php:64
+msgctxt "Overrides the \"Featured Image\" phrase"
+msgid "Custom Code Featured Image"
+msgstr "Imagen destacada del código personalizado"
+
+#: includes/class-scc-post-type.php:65
+msgctxt "Overrides the \"Set featured image\" phrase"
+msgid "Set featured image"
+msgstr "Establecer imagen destacada"
+
+#: includes/class-scc-post-type.php:66
+msgctxt "Overrides the \"Remove featured image\" phrase"
+msgid "Remove featured image"
+msgstr "Eliminar imagen destacada"
+
+#: includes/class-scc-post-type.php:67
+msgctxt "Overrides the \"Use as featured image\" phrase"
+msgid "Use as featured image"
+msgstr "Usar como imagen destacada"
+
+#: includes/class-scc-post-type.php:68
+msgctxt "The post type archive label"
+msgid "Custom Code archives"
+msgstr "Archivos de códigos personalizados"
+
+#: includes/class-scc-post-type.php:69
+msgctxt "Overrides the \"Insert into post\" phrase"
+msgid "Insert into custom code"
+msgstr "Insertar en código personalizado"
+
+#: includes/class-scc-post-type.php:70
+msgctxt "Overrides the \"Uploaded to this post\" phrase"
+msgid "Uploaded to this custom code"
+msgstr "Subido a este código personalizado"
+
+#: includes/class-scc-post-type.php:71
+msgctxt "Screen reader text for the filter links"
+msgid "Filter custom codes list"
+msgstr "Filtrar lista de códigos personalizados"
+
+#: includes/class-scc-post-type.php:72
+msgctxt "Screen reader text for the pagination"
+msgid "Custom codes list navigation"
+msgstr "Navegación de lista de códigos personalizados"
+
+#: includes/class-scc-post-type.php:73
+msgctxt "Screen reader text for the items list"
+msgid "Custom codes list"
+msgstr "Lista de códigos personalizados"
+
+#: includes/class-scc-post-type.php:101
+msgctxt "Taxonomy General Name"
+msgid "Code Categories"
+msgstr "Categorías de código"
+
+#: includes/class-scc-post-type.php:102
+msgctxt "Taxonomy Singular Name"
+msgid "Code Category"
+msgstr "Categoría de código"
+
+#: includes/class-scc-post-type.php:103
+msgid "Categories"
+msgstr "Categorías"
+
+#: includes/class-scc-post-type.php:104
+msgid "All Categories"
+msgstr "Todas las categorías"
+
+#: includes/class-scc-post-type.php:105
+msgid "Parent Category"
+msgstr "Categoría padre"
+
+#: includes/class-scc-post-type.php:106
+msgid "Parent Category:"
+msgstr "Categoría padre:"
+
+#: includes/class-scc-post-type.php:107
+msgid "New Category Name"
+msgstr "Nuevo nombre de categoría"
+
+#: includes/class-scc-post-type.php:108
+msgid "Add New Category"
+msgstr "Añadir nueva categoría"
+
+#: includes/class-scc-post-type.php:109
+msgid "Edit Category"
+msgstr "Editar categoría"
+
+#: includes/class-scc-post-type.php:110
+msgid "Update Category"
+msgstr "Actualizar categoría"
+
+#: includes/class-scc-post-type.php:111
+msgid "View Category"
+msgstr "Ver categoría"
+
+#: includes/class-scc-post-type.php:112
+msgid "Separate categories with commas"
+msgstr "Separa las categorías con comas"
+
+#: includes/class-scc-post-type.php:113
+msgid "Add or remove categories"
+msgstr "Añadir o eliminar categorías"
+
+#: includes/class-scc-post-type.php:114
+msgid "Choose from the most used"
+msgstr "Elegir de las más usadas"
+
+#: includes/class-scc-post-type.php:115
+msgid "Popular Categories"
+msgstr "Categorías populares"
+
+#: includes/class-scc-post-type.php:116
+msgid "Search Categories"
+msgstr "Buscar categorías"
+
+#: includes/class-scc-post-type.php:117
+msgid "Not Found"
+msgstr "No encontrado"
+
+#: includes/class-scc-post-type.php:118
+msgid "No categories"
+msgstr "Sin categorías"
+
+#: includes/class-scc-post-type.php:119
+msgid "Categories list"
+msgstr "Lista de categorías"
+
+#: includes/class-scc-post-type.php:120
+msgid "Categories list navigation"
+msgstr "Navegación de lista de categorías"
+
+#: includes/class-scc-post-type.php:150 includes/class-scc-post-type.php:153
+msgid "Custom code updated."
+msgstr "Código personalizado actualizado."
+
+#: includes/class-scc-post-type.php:151
+msgid "Custom field updated."
+msgstr "Campo personalizado actualizado."
+
+#: includes/class-scc-post-type.php:152
+msgid "Custom field deleted."
+msgstr "Campo personalizado eliminado."
+
+#: includes/class-scc-post-type.php:155
+#, php-format
+msgid "Custom code restored to revision from %s"
+msgstr "Código personalizado restaurado a la revisión de %s"
+
+#: includes/class-scc-post-type.php:156
+msgid "Custom code published."
+msgstr "Código personalizado publicado."
+
+#: includes/class-scc-post-type.php:157
+msgid "Custom code saved."
+msgstr "Código personalizado guardado."
+
+#: includes/class-scc-post-type.php:158
+msgid "Custom code submitted."
+msgstr "Código personalizado enviado."
+
+#: includes/class-scc-post-type.php:160
+#, php-format
+msgid "Custom code scheduled for: <strong>%1$s</strong>."
+msgstr "Código personalizado programado para: <strong>%1$s</strong>."
+
+#: includes/class-scc-post-type.php:162
+msgid "M j, Y @ G:i"
+msgstr "j M, Y @ G:i"
+
+#: includes/class-scc-post-type.php:164
+msgid "Custom code draft updated."
+msgstr "Borrador de código personalizado actualizado."
+
+#: includes/class-scc-settings.php:82
+msgid "Simple Custom Code"
+msgstr "Simple Custom Code"
+
+#: includes/class-scc-settings.php:83 includes/class-scc-settings.php:96
+#: includes/class-scc-settings.php:117
+msgid "Add CSS Code"
+msgstr "Añadir código CSS"
+
+#: includes/class-scc-settings.php:84 includes/class-scc-settings.php:97
+#: includes/class-scc-settings.php:118
+msgid "Add JS Code"
+msgstr "Añadir código JS"
+
+#: includes/class-scc-settings.php:85 includes/class-scc-settings.php:98
+#: includes/class-scc-settings.php:119
+msgid "Add HTML Code"
+msgstr "Añadir código HTML"
+
+#: includes/class-scc-settings.php:99
+msgid "Edit CSS Code"
+msgstr "Editar código CSS"
+
+#: includes/class-scc-settings.php:100
+msgid "Edit JS Code"
+msgstr "Editar código JS"
+
+#: includes/class-scc-settings.php:101
+msgid "Edit HTML Code"
+msgstr "Editar código HTML"
+
+#: includes/class-scc-settings.php:145
+msgid "Code updated"
+msgstr "Código actualizado"
+
+#: includes/class-scc-settings.php:172
+msgid "Add CSS code"
+msgstr "Añadir código CSS"
+
+#: includes/class-scc-settings.php:173
+msgid "Add JS code"
+msgstr "Añadir código JS"
+
+#: includes/class-scc-settings.php:174
+msgid "Add HTML code"
+msgstr "Añadir código HTML"
+
+#: includes/class-scc-settings.php:192
+msgid "Add Custom CSS"
+msgstr "Añadir CSS personalizado"
+
+#: includes/class-scc-settings.php:195
+msgid "Add Custom JS"
+msgstr "Añadir JS personalizado"
+
+#: includes/class-scc-settings.php:198
+msgid "Add Custom HTML"
+msgstr "Añadir HTML personalizado"
+
+#: includes/class-scc-settings.php:203
+msgid "Simple Custom Code Settings"
+msgstr "Configuración de Simple Custom Code"
+
+#: includes/class-scc-settings.php:204 simple-custom-code.php:424
+msgid "Settings"
+msgstr "Configuración"
+
+#: includes/class-scc-settings.php:225
+msgid "General Settings"
+msgstr "Configuración general"
+
+#: includes/class-scc-settings.php:232
+msgid "Editor Template"
+msgstr "Plantilla del editor"
+
+#: includes/class-scc-settings.php:240
+msgid "Access Role"
+msgstr "Rol de acceso"
+
+#: includes/class-scc-settings.php:248
+msgid "Show code warnings and errors"
+msgstr "Mostrar advertencias y errores del código"
+
+#: includes/class-scc-settings.php:256
+msgid "Autocomplete in the editor"
+msgstr "Autocompletar en el editor"
+
+#: includes/class-scc-settings.php:264
+msgid "Code loading details"
+msgstr "Detalles de carga del código"
+
+#: includes/class-scc-settings.php:273
+msgid "AI"
+msgstr "IA"
+
+#: includes/class-scc-settings.php:280
+msgid "Open AI Key"
+msgstr "Clave de Open AI"
+
+#: includes/class-scc-settings.php:288
+msgid "Open AI Model"
+msgstr "Modelo de Open AI"
+
+#: includes/class-scc-settings.php:297
+msgid "Cache Settings"
+msgstr "Configuración de caché"
+
+#: includes/class-scc-settings.php:304
+msgid "Cache Mode"
+msgstr "Modo de caché"
+
+#: includes/class-scc-settings.php:312
+msgid "Cache Type"
+msgstr "Tipo de caché"
+
+#: includes/class-scc-settings.php:320
+msgid "Cache Method"
+msgstr "Método de caché"
+
+#: includes/class-scc-settings.php:328
+msgid "Cache Optimized Loading"
+msgstr "Carga optimizada de caché"
+
+#: includes/class-scc-settings.php:341
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tienes permisos suficientes para acceder a esta página."
+
+#: includes/class-scc-settings.php:364
+msgid "Use the power of OpenAI to improve your productivity. Enter your API key, select an AI model, and start generating code using the power of AI."
+msgstr "Usa el poder de OpenAI para mejorar tu productividad. Ingresa tu clave API, selecciona un modelo de IA y comienza a generar código usando el poder de la IA."
+
+#: includes/class-scc-settings.php:367
+msgid "Create an account on <a href=\"https://platform.openai.com/account/api-keys\" target=\"_blank\">OpenAI website</a>."
+msgstr "Crea una cuenta en el <a href=\"https://platform.openai.com/account/api-keys\" target=\"_blank\">sitio web de OpenAI</a>."
+
+#: includes/class-scc-settings.php:370
+msgid "Make a payment of at least $5 on the OpenAI platform."
+msgstr "Realiza un pago de al menos $5 en la plataforma OpenAI."
+
+#: includes/class-scc-settings.php:373
+msgid "Generate an OpenAI API key."
+msgstr "Genera una clave API de OpenAI."
+
+#: includes/class-scc-settings.php:376
+msgid "Paste it below and Save changes."
+msgstr "Pégala a continuación y guarda los cambios."
+
+#: includes/class-scc-settings.php:388
+msgid "Configure general plugin settings."
+msgstr "Configura los ajustes generales del plugin."
+
+#: includes/class-scc-settings.php:396
+msgid "Configure cache settings to improve performance."
+msgstr "Configura los ajustes de caché para mejorar el rendimiento."
+
+#: includes/class-scc-settings.php:476
+msgid "Select the editor template for code editing."
+msgstr "Selecciona la plantilla del editor para editar código."
+
+#: includes/class-scc-settings.php:486
+msgid "Administrator"
+msgstr "Administrador"
+
+#: includes/class-scc-settings.php:487
+msgid "Editor"
+msgstr "Editor"
+
+#: includes/class-scc-settings.php:489
+msgid "Contributor"
+msgstr "Colaborador"
+
+#: includes/class-scc-settings.php:497
+msgid "Select the minimum role required to access the Simple Custom Code for adding and editing custom code. Access to settings will always require administrative privileges."
+msgstr "Selecciona el rol mínimo requerido para acceder a Simple Custom Code para añadir y editar código personalizado. El acceso a la configuración siempre requerirá privilegios administrativos."
+
+#: includes/class-scc-settings.php:539
+msgid "Disable loaded codes comments in the source of the page"
+msgstr "Deshabilitar comentarios de códigos cargados en el código fuente de la página"
+
+#: includes/class-scc-settings.php:555
+msgid "Enable code autocomplete in the editor"
+msgstr "Habilitar autocompletado de código en el editor"
+
+#: includes/class-scc-settings.php:565
+msgid "Enable code warnings in the editor"
+msgstr "Habilitar advertencias de código en el editor"
+
+#: includes/class-scc-settings.php:582
+msgid "Enable cache mode"
+msgstr "Habilitar modo de caché"
+
+#: includes/class-scc-settings.php:584
+msgid "When enabled, codes will be cached for better performance."
+msgstr "Cuando está habilitado, los códigos se almacenarán en caché para un mejor rendimiento."
+
+#: includes/class-scc-settings.php:597
+msgid "No"
+msgstr "No"
+
+#: includes/class-scc-settings.php:598 includes/class-scc-settings.php:617
+msgid "CSS and JavaScript"
+msgstr "CSS y JavaScript"
+
+#: includes/class-scc-settings.php:599 includes/class-scc-settings.php:618
+msgid "CSS only"
+msgstr "Solo CSS"
+
+#: includes/class-scc-settings.php:600 includes/class-scc-settings.php:619
+msgid "JavaScript only"
+msgstr "Solo JavaScript"
+
+#: includes/class-scc-settings.php:627
+msgid "Select which types of code should be cached."
+msgstr "Selecciona qué tipos de código deben almacenarse en caché."
+
+#: includes/class-scc-settings.php:637
+msgid "File"
+msgstr "Archivo"
+
+#: includes/class-scc-settings.php:638
+msgid "Inline"
+msgstr "En línea"
+
+#: includes/class-scc-settings.php:646
+msgid "Select how cached code should be loaded."
+msgstr "Selecciona cómo debe cargarse el código en caché."
+
+#: includes/class-scc-settings.php:701
+msgid "Cache Mode is Active"
+msgstr "El modo de caché está activo"
+
+#: includes/class-scc-settings.php:702
+msgid "Your custom codes are being cached for better performance."
+msgstr "Tus códigos personalizados se están almacenando en caché para un mejor rendimiento."
+
+#: includes/class-scc-settings.php:703
+msgid "Clear Cache"
+msgstr "Limpiar caché"
+
+#: includes/class-scc-settings.php:726
+msgid "Clear CCM Cache"
+msgstr "Limpiar caché de CCM"
+
+#: includes/class-scc-settings.php:744
+msgid "You do not have permission to clear cache."
+msgstr "No tienes permiso para limpiar la caché."
+
+#: includes/class-scc-settings.php:752 includes/class-scc-settings.php:787
+msgid "Cache cleared successfully!"
+msgstr "¡Caché limpiada con éxito!"
+
+#: includes/class-scc-settings.php:786
+msgid "Clearing cache..."
+msgstr "Limpiando caché..."
+
+#: simple-custom-code.php:38
+msgid "Simple Custom Code Pro is installed and active."
+msgstr "Simple Custom Code Pro está instalado y activo."
+
+#: simple-custom-code.php:39
+msgid "You can now disable the free Simple Custom Code plugin from your Plugins list, since the Pro version is already running."
+msgstr "Ahora puedes desactivar el plugin gratuito Simple Custom Code desde tu lista de plugins, ya que la versión Pro ya está funcionando."
+
+#: simple-custom-code.php:289
+msgid "Automatically"
+msgstr "Automáticamente"
+
+#: simple-custom-code.php:290
+msgid "Manually"
+msgstr "Manualmente"
+
+#: simple-custom-code.php:305
+msgid "Action Hook"
+msgstr "Gancho de acción"
+
+#: simple-custom-code.php:306
+msgid "Filter Hook"
+msgstr "Gancho de filtro"
+
+#: simple-custom-code.php:320
+msgid "Frontend (Site)"
+msgstr "Frontend (Sitio)"
+
+#: simple-custom-code.php:321
+msgid "Backend (Admin)"
+msgstr "Backend (Administración)"
+
+#: simple-custom-code.php:322
+msgid "Login Page"
+msgstr "Página de inicio de sesión"
+
+#: simple-custom-code.php:323
+msgid "Block Editor"
+msgstr "Editor de bloques"
+
+#: simple-custom-code.php:337
+msgid "Head"
+msgstr "Cabecera"
+
+#: simple-custom-code.php:338
+msgid "End of Page"
+msgstr "Final de la página"
+
+#: simple-custom-code.php:352
+msgid "Internal"
+msgstr "Interno"
+
+#: simple-custom-code.php:353
+msgid "External File"
+msgstr "Archivo externo"
+
+#: simple-custom-code.php:367
+msgid "None"
+msgstr "Ninguno"
+
+#: simple-custom-code.php:368
+msgid "SCSS"
+msgstr "SCSS"
+
+#: simple-custom-code.php:369
+msgid "Less"
+msgstr "Less"
+
+#: simple-custom-code.php:383
+msgid "Contains"
+msgstr "Contiene"
+
+#: simple-custom-code.php:384
+msgid "Not Contains"
+msgstr "No contiene"
+
+#: simple-custom-code.php:385
+msgid "Equals"
+msgstr "Igual a"
+
+#: simple-custom-code.php:386
+msgid "Not Equals"
+msgstr "No igual a"
+
+#: simple-custom-code.php:387
+msgid "Starts With"
+msgstr "Comienza con"
+
+#: simple-custom-code.php:388
+msgid "Ends With"
+msgstr "Termina con"
+
+#: simple-custom-code.php:389
+msgid "Regular Expression"
+msgstr "Expresión regular"
+
+#: simple-custom-code.php:404
+msgid " (Highest)"
+msgstr " (Más alta)"
+
+#: simple-custom-code.php:404
+msgid " (Lowest)"
+msgstr " (Más baja)"
+
+#: simple-custom-code.php:427
+msgid "Upgrade to Pro"
+msgstr "Actualizar a Pro"
+
+#. Plugin Name of the plugin/theme
+msgid "Simple Custom Code - CSS, JS, and HTML"
+msgstr "Simple Custom Code - CSS, JS y HTML"
+
+#. Plugin URI of the plugin/theme
+msgid "https://simplecustomcode.com"
+msgstr "https://simplecustomcode.com"
+
+#. Description of the plugin/theme
+msgid "A comprehensive plugin for managing custom CSS, JavaScript, and HTML code snippets with advanced loading options, conditions, and caching."
+msgstr "Un plugin completo para gestionar fragmentos de código CSS, JavaScript y HTML personalizados con opciones avanzadas de carga, condiciones y almacenamiento en caché."
+
+#. Author of the plugin/theme
+msgid "SimpleCustomCode"
+msgstr "SimpleCustomCode"
+
+#. Author URI of the plugin/theme
+msgid "hhttps://simplecustomcode.com"
+msgstr "hhttps://simplecustomcode.com"
