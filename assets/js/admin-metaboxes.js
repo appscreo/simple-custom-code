@@ -271,7 +271,11 @@ jQuery(document).ready(function ($) {
     // Initialize CodeMirror if available
     if (typeof CodeMirror !== 'undefined') {
 
+        let expectedHeight = window.innerHeight;
+        if (document.getElementById('wpadminbar')) expectedHeight -= document.getElementById('wpadminbar').offsetHeight;
+        expectedHeight -= 120;
 
+        if (expectedHeight < 400) expectedHeight = 400;
 
         window.ccmCodeMirror = CodeMirror.fromTextArea(document.getElementById('scc-code-editor'), {
             lineNumbers: true,
@@ -295,6 +299,8 @@ jQuery(document).ready(function ($) {
         if (codeLinting == '1') window.ccmCodeMirror.setOption('lint', true);
 
         if (codeTheme != '') window.ccmCodeMirror.setOption('theme', codeTheme);
+
+        window.ccmCodeMirror.setSize('100%', expectedHeight);
 
         if (codeAutocomplete == '1') {
             window.ccmCodeMirror.on("keyup", function (cm, event) {

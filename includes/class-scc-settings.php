@@ -267,6 +267,13 @@ class SCC_Settings
             'scc_general_settings'
         );
 
+        add_settings_field(
+            'file_version',
+            esc_html__('External files version', 'simple-custom-code'),
+            array($this, 'file_version_callback'),
+            'scc-settings',
+            'scc_general_settings'
+        );
 
         add_settings_section(
             'scc_ai_settings',
@@ -546,6 +553,16 @@ class SCC_Settings
         echo '</div>';
     }
 
+    public function file_version_callback()
+    {
+        $settings = scc_get_settings();
+
+        echo '<label>';
+        echo '<input type="checkbox" id="file_version" name="scc_settings[file_version]" value="1" ' . checked($settings['file_version'], true, false) . ' />';
+        echo ' ' . __('Add file version to external loaded files', 'simple-custom-code');
+        echo '</label>';
+    }
+
     public function code_autocomplete_callback()
     {
         $settings = scc_get_settings();
@@ -659,6 +676,7 @@ class SCC_Settings
         $sanitized['code_linting'] = isset($input['code_linting']) ? true : false;
         $sanitized['code_autocomplete'] = isset($input['code_autocomplete']) ? true : false;
 
+        $sanitized['file_version'] = isset($input['file_version']) ? true : false;
 
         $sanitized['ai_key'] = sanitize_text_field($input['ai_key']);
         $sanitized['ai_model'] = sanitize_text_field($input['ai_model']);

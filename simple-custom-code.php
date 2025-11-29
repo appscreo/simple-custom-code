@@ -4,7 +4,7 @@
  * Plugin Name: Simple Custom Code - CSS, JS, and HTML
  * Plugin URI: https://simplecustomcode.com
  * Description: A comprehensive plugin for managing custom CSS, JavaScript, and HTML code snippets with advanced loading options, conditions, and caching.
- * Version: 1.0
+ * Version: 1.1
  * Author: SimpleCustomCode Team
  * Author URI: https://simplecustomcode.com
  * License: GPL v2 or later
@@ -227,6 +227,7 @@ if (!function_exists('scc_get_settings')) {
             'code_linting' => false,
             'code_disable_debug_comments' => false,
             'code_autocomplete' => false,
+            'file_version' => false,
             'ai_model' => 'gpt-4.1',
             'ai_key' => ''
         );
@@ -350,6 +351,7 @@ if (!function_exists('scc_get_code_positions')) {
     {
         return array(
             'head' => esc_html__('Head', 'simple-custom-code'),
+            'body_open' => esc_html__('After <body> tag', 'simple-custom-code'),
             'footer' => esc_html__('End of Page', 'simple-custom-code')
         );
     }

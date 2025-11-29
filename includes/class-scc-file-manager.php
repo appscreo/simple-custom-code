@@ -199,7 +199,6 @@ class SCC_File_Manager
         if (! $preprocessor || $preprocessor === 'none') {
             return;
         }
-        
     }
 
     /**
@@ -278,8 +277,15 @@ class SCC_File_Manager
             $suffix .= $use_compiled ? '.min' : 'min';
         }
 
+
         $file_path = $this->get_file_path($post_id, $code_type, $suffix);
         $file_url = $this->get_file_url($post_id, $code_type, $suffix);
+
+        $modified = '';
+        if (file_exists($file_path)) {
+            $modified = filemtime($file_path);
+            $modified = date('Ymd-His', $modified);
+        }
 
         return array(
             'path' => $file_path,
@@ -289,6 +295,7 @@ class SCC_File_Manager
             'linking_type' => $linking_type,
             'minified' => $minify_enabled,
             'optimized_css' => $css_optimized,
+            'modified' => $modified,
             'compiled' => $use_compiled
         );
     }

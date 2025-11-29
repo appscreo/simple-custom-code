@@ -41,13 +41,18 @@ class SCC_Frontend
      */
     private function __construct()
     {
-        add_action('wp_head', array($this, 'output_head_codes'), 1);
+        add_action('wp_head', array($this, 'output_head_codes'), 30);
+        add_action('wp_body_open', array($this, 'output_body_open_codes'), 30);
         add_action('wp_footer', array($this, 'output_footer_codes'), 999);
-        add_action('admin_head', array($this, 'output_admin_head_codes'), 1);
+        add_action('admin_head', array($this, 'output_admin_head_codes'), 30);
         add_action('admin_footer', array($this, 'output_admin_footer_codes'), 999);
-        add_action('login_head', array($this, 'output_login_head_codes'), 1);
+        add_action('login_head', array($this, 'output_login_head_codes'), 30);
         add_action('login_footer', array($this, 'output_login_footer_codes'), 999);
         add_action('enqueue_block_editor_assets', array($this, 'output_block_editor_codes'));
+    }
+    
+    public function output_body_open_codes() {
+        $this->output_codes('frontend', 'body_open');
     }
 
     /**
@@ -305,6 +310,10 @@ class SCC_Frontend
         }
 
         $file_url = $file_info['url'];
+
+        if ($settings['file_version'] && isset($file_info['modified'])) {
+            $file_url .= '?ver=' . $file_info['modified'];
+        }
 
         switch ($code['type']) {
             case 'css':
