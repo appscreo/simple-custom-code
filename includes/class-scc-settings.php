@@ -275,6 +275,14 @@ class SCC_Settings
             'scc_general_settings'
         );
 
+        add_settings_field(
+            'css_customizer',
+            esc_html__('CSS Customizer', 'simple-custom-code'),
+            array($this, 'css_customizer_callback'),
+            'scc-settings',
+            'scc_general_settings'
+        );
+
         add_settings_section(
             'scc_ai_settings',
             esc_html__('AI', 'simple-custom-code'),
@@ -553,6 +561,16 @@ class SCC_Settings
         echo '</div>';
     }
 
+    public function css_customizer_callback()
+    {
+        $settings = scc_get_settings();
+
+        echo '<label>';
+        echo '<input type="checkbox" id="css_customizer" name="scc_settings[css_customizer]" value="1" ' . checked($settings['css_customizer'], true, false) . ' />';
+        echo ' ' . __('Enable quick CSS customizations using the no-code CSS customizer', 'simple-custom-code');
+        echo '</label>';
+    }
+
     public function file_version_callback()
     {
         $settings = scc_get_settings();
@@ -677,6 +695,7 @@ class SCC_Settings
         $sanitized['code_autocomplete'] = isset($input['code_autocomplete']) ? true : false;
 
         $sanitized['file_version'] = isset($input['file_version']) ? true : false;
+        $sanitized['css_customizer'] = isset($input['css_customizer']) ? true : false;
 
         $sanitized['ai_key'] = sanitize_text_field($input['ai_key']);
         $sanitized['ai_model'] = sanitize_text_field($input['ai_model']);
@@ -770,7 +789,7 @@ class SCC_Settings
                 'message' => esc_html__('Cache cleared successfully!', 'simple-custom-code')
             ));
         } else {
-            wp_redirect(wp_get_referer());
+            wp_safe_redirect(wp_get_referer());
             exit;
         }
     }

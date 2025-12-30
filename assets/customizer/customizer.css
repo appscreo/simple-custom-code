@@ -1,0 +1,487 @@
+:root {
+  color-scheme: light dark;
+  --panel-bg: #ffffff;
+  --panel-fg: #0f172a;
+  --muted-fg: #475569;
+  --accent: #3b82f6;
+  --accent-contrast: #ffffff;
+  --border: #e2e8f0;
+  --surface: #f8fafc;
+  --surface-2: #f1f5f9;
+  --outline: #0b85d7;
+  --danger: #ef4444;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] {
+  --panel-bg: #0b1020;
+  --panel-fg: #e5e7eb;
+  --muted-fg: #94a3b8;
+  --accent: #60a5fa;
+  --accent-contrast: #0b1020;
+  --border: #1f2937;
+  --surface: #0f172a;
+  --surface-2: #111827;
+  --outline: #0b85d7;
+  --danger: #f87171;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.cex-hidden {
+  display: none !important;
+}
+
+/* Selector toggle button */
+#cex-select-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2147483645;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--panel-fg);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 14px/1.2 ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  cursor: pointer;
+  transition: transform .15s ease, background .2s ease, color .2s ease, border-color .2s ease;
+  color: #312E81;
+  border: 2px solid #312E81;
+  padding: 0;
+}
+
+#cex-select-btn svg {
+  fill: currentColor;
+  width: 28px;
+  height: 28px;
+}
+
+#cex-select-btn:hover {
+  transform: translateY(-1px);
+  background: #312E81;
+  color: #fff;
+}
+
+#cex-select-btn.cex-active-btn {
+  background: #312E81;
+  color: #fff;
+}
+
+/* Hover outline for selection mode */
+.cex-outline {
+  outline: 2px solid var(--outline) !important;
+  background-color: rgba(224, 239, 254, 0.25);
+  outline-offset: 2px !important;
+  cursor: crosshair !important;
+}
+
+/* Right panel container */
+#cex-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 420px;
+  max-width: 100vw;
+  transform: translateX(100%);
+  transition: transform .25s ease;
+  z-index: 2147483644;
+}
+
+#cex-panel.active {
+  transform: translateX(0);
+}
+
+/* Panel chrome */
+#cex-panel .cex-shell {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  background: var(--panel-bg);
+  color: var(--panel-fg);
+  border-left: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+/* Header */
+#cex-panel .cex-header {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  padding: 0;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+#cex-panel .cex-title {
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+#cex-panel .cex-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#cex-panel .cex-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--panel-fg);
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+}
+
+#cex-panel .cex-icon-btn:hover {
+  background: var(--surface);
+}
+
+/* Path controls under header */
+#cex-panel .cex-path {
+  display: grid;
+  grid-template-columns: 1fr 120px;
+  gap: 8px;
+  padding: 10px 14px;
+  grid-column-gap: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+#cex-panel input[type="text"],
+#cex-panel textarea,
+#cex-panel select {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: var(--panel-bg);
+  color: var(--panel-fg);
+  padding: 5px;
+  font: 500 13px/1.3 ui-sans-serif, system-ui;
+  transition: border-color .15s ease, background .2s ease, color .2s ease;
+}
+
+#cex-panel textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#cex-panel input[type="text"]:focus-visible,
+#cex-panel textarea:focus-visible,
+#cex-panel select:focus-visible {
+  outline: none;
+}
+
+#cex-panel input[type="text"]:focus,
+#cex-panel textarea:focus,
+#cex-panel select:focus {
+  border: 1px solid var(--accent);
+}
+
+/* Content area (scrollable) */
+#cex-panel .cex-content {
+  overflow-y: auto;
+  padding: 12px 14px;
+}
+
+/* Footer */
+#cex-panel .cex-footer {
+  display: grid;
+  gap: 8px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+
+#cex-panel .cex-footer-actions {
+  display: flex;
+  gap: 8px;
+}
+
+#cex-panel .cex-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--panel-fg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, color .2s ease;
+}
+
+#cex-panel .cex-btn.primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent);
+}
+
+#cex-panel .cex-btn.danger {
+  background: var(--danger);
+  color: #fff;
+  border-color: var(--danger);
+}
+
+#cex-panel .cex-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* Collapsible panels */
+.cex-panel {
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  margin-bottom: 12px;
+  _overflow: hidden;
+  background: var(--panel-bg);
+}
+
+.cex-panel-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.cex-panel-title {
+  font-weight: 600;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.cex-panel-toggle {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 0px solid var(--border);
+  background: transparent;
+  color: var(--panel-fg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cex-panel-body {
+  display: none;
+  padding: 12px;
+}
+
+.cex-panel.open .cex-panel-body {
+  display: block;
+}
+
+/* Tabs for regular/hover controls */
+.cex-tabs {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.cex-tablist {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.cex-tab {
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--panel-fg);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 11px;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+.cex-tab.active {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent);
+}
+
+.cex-tabpanel {
+  display: none;
+}
+
+.cex-tabpanel.active {
+  display: block;
+}
+
+/* Compact field rows */
+.cex-field-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.cex-label {
+  color: var(--panel-fg);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.cex-unit {
+  display: grid;
+  grid-template-columns: 1fr 35%;
+  gap: 8px;
+}
+
+/* Exclusion class for highlight */
+.cex-ui,
+#cex-panel,
+#cex-select-btn {
+  pointer-events: auto;
+}
+
+/* Prevent highlight effects on our own UI elements */
+.cex-ui,
+#cex-panel *,
+#cex-select-btn {
+  isolation: isolate;
+}
+
+/* Utility */
+.cex-kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.cex-footer-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.cex-footer-actions .cex-btn {
+  flex: 1;
+}
+
+.cex-tabs h4 {
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.cex-link-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: var(--muted-fg);
+  transition: all 0.1s ease-in-out;
+  border: 0;
+  padding: 0;
+}
+
+.cex-link-button svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.cex-link-button.cex-active {
+  color: var(--accent);
+}
+
+#cex-float-controls .cex-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--panel-fg);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+}
+
+#cex-float-controls .cex-btn label {
+  cursor: pointer;
+}
+
+#cex-float-controls .cex-btn svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  stroke: currentColor;
+}
+
+#cex-float-controls .cex-btn.primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent);
+}
+
+#cex-float-controls .cex-btn.danger {
+  background: var(--danger);
+  color: #fff;
+  border-color: var(--danger);
+}
+
+#cex-float-controls .cex-btn:hover {
+  filter: brightness(1.05);
+}
+
+.cex-ui-pathpicker {
+  border-radius: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+.cex-ui-pathpicker-header>div {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.cex-icon-btn,
+.cex-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  line-height: 1em;
+  min-height: 30px;
+  margin: 0;
+  padding: 0 5px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  color: #2271b1;
+  border-color: #2271b1;
+  background: #f6f7f7;
+  vertical-align: top;
+}
+
+.cex-btn.primary {
+  background: var(--accent);
+  color: var(--accent-contrast);
+  border-color: var(--accent);
+}

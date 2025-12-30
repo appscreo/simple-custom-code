@@ -1,0 +1,109 @@
+#scc-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scc-modal {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    color: #3c434a;
+    font-size: 16px;
+}
+
+.scc-modal h2 {
+    margin: 0;
+    font-size: 18px;
+    _text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1em;
+    font-family: inherit;
+    color: inherit;
+}
+
+.scc-modal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.scc-modal li {
+    margin: 8px 0;
+}
+
+
+.scc-modal li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #2271b1;
+    font-weight: 500;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+.scc-modal li a:hover {
+    color: #3c434a;
+    background-color: #f2f4f6;
+}
+
+.scc-modal li .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.scc-modal li .status.status-active {
+    color: #00a32a;
+    background: #edfaef;
+    border: 1px solid #00a32a;
+}
+
+.scc-modal button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2.15384615;
+    min-height: 30px;
+    margin: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    color: #2271b1;
+    border-color: #2271b1;
+    background: #f6f7f7;
+    vertical-align: top;
+
+}
+
+.scc-modal li .status.status-inactive {
+    color: #d63638;
+    background: #fef2f2;
+    border: 1px solid #d63638;
+}

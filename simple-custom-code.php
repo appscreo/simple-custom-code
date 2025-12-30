@@ -4,7 +4,7 @@
  * Plugin Name: Simple Custom Code - CSS, JS, and HTML
  * Plugin URI: https://simplecustomcode.com
  * Description: A comprehensive plugin for managing custom CSS, JavaScript, and HTML code snippets with advanced loading options, conditions, and caching.
- * Version: 1.1
+ * Version: 1.2
  * Author: SimpleCustomCode Team
  * Author URI: https://simplecustomcode.com
  * License: GPL v2 or later
@@ -12,7 +12,7 @@
  * Text Domain: simple-custom-code
  * Domain Path: /languages
  * Requires at least: 5.0
- * Tested up to: 6.8.3
+ * Tested up to: 6.9
  * Requires PHP: 7.0
  *
  * @package SimpleCustomCode
@@ -45,7 +45,7 @@ if (defined('SCC_PRO_VERSION')) {
 
 if (!class_exists('Simple_Custom_Code')) {
     // Define plugin constants
-    define('SCC_VERSION', '1.0');
+    define('SCC_VERSION', '1.2');
     define('SCC_PLUGIN_FILE', __FILE__);
     define('SCC_PLUGIN_URL', plugin_dir_url(__FILE__));
     define('SCC_PLUGIN_PATH', plugin_dir_path(__FILE__));
@@ -145,6 +145,13 @@ if (!class_exists('Simple_Custom_Code')) {
                 require_once SCC_PLUGIN_PATH . 'includes/class-scc-file-manager.php';
                 require_once SCC_PLUGIN_PATH . 'includes/class-scc-cache.php';
                 require_once SCC_PLUGIN_PATH . 'includes/class-scc-chatgpt-code-generator.php';
+
+                
+                $settings = scc_get_settings();
+                if ($settings['css_customizer']) {
+                    require_once SCC_PLUGIN_PATH . 'includes/class-scc-customizer-menu.php';
+                    require_once SCC_PLUGIN_PATH . 'includes/class-scc-customizer.php';
+                }
             }
         }
 
@@ -228,6 +235,7 @@ if (!function_exists('scc_get_settings')) {
             'code_disable_debug_comments' => false,
             'code_autocomplete' => false,
             'file_version' => false,
+            'css_customizer' => true,
             'ai_model' => 'gpt-4.1',
             'ai_key' => ''
         );
